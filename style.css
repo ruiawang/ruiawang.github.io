@@ -7,11 +7,38 @@ html {
     font-size: 1.5em;
   }
 
+span.halfbold {
+    font-weight: 600;
+}
+
+span.underline-pink {
+    text-decoration: underline;
+    text-decoration-color: #d98ba1;
+    text-decoration-thickness: 3px;
+    text-decoration-skip-ink: none;
+}
+
+span.underline-maroon {
+    text-decoration: underline;
+    text-decoration-color: #800000;
+    text-decoration-thickness: 3px;
+    text-decoration-skip-ink: none;
+}
+
+span.underline-blue {
+    text-decoration: underline;
+    text-decoration-color: #2774ae;
+    text-decoration-thickness: 3px;
+    text-decoration-skip-ink: none;
+}
+
+
 .body-container {
     display: flex;
     flex-direction: column;
     margin-block: 2em;
 }
+
 
 .header-container {
     display: flex;
