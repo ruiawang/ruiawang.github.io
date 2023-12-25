@@ -68,14 +68,3 @@ a {
 .header-urls > a > img {
     width: 36px;
 }
-
-.header-imgs {
-    width: 175px;
-    height: 175px;
-    border-radius: 100px;
-    margin-left: 25px;
-
-    @media screen and (max-width: 1200px) {
-        display: none;
-    }
-}
