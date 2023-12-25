@@ -7,10 +7,6 @@ html {
     font-size: 1.5em;
   }
 
-span.halfbold {
-    font-weight: 600;
-}
-
 span.underline-pink {
     text-decoration: underline;
     text-decoration-color: #d98ba1;
@@ -32,10 +28,10 @@ span.underline-blue {
     text-decoration-skip-ink: none;
 }
 
-
 .body-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-block: 2em;
 }
 
@@ -72,4 +68,10 @@ span.underline-blue {
 .header-imgs {
     width: 175px;
     height: 175px;
+    border-radius: 100px;
+    margin-left: 25px;
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
 }
