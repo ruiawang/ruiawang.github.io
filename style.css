@@ -28,6 +28,10 @@ span.underline-blue {
     text-decoration-skip-ink: none;
 }
 
+span.bold {
+    font-weight: 600;
+}
+
 a {
     text-decoration: none;
 }
@@ -67,4 +71,18 @@ a {
 
 .header-urls > a > img {
     width: 36px;
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin-top: 1em;
+}
+
+.about-me-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-block: 1em;
 }
