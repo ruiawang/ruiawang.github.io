@@ -1,0 +1,26 @@
+url: "ruiawang.github.io"
+baseurl: 
+title: ruiawang
+description: Rui Wang's Homepage
+author: Rui Wang
+
+permalink: /:year/:month/:day/:slug/index.html
+
+sass:
+  style: compressed
+
+exclude:
+  - .gitignore
+  - _config.yml
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+markdown: kramdown
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+  math_engine: katex
+  input: GFM
+  syntax_highlighter: rouge
+  
+highlighter: rouge

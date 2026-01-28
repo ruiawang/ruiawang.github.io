@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% assign pageLanguage = page.language | default: "en-US" %}
+<html lang="{{ pageLanguage | default: site.lang }}">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+
+        <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+        <link rel="stylesheet" href="/static/css/main.css">
+    </head>
+    <body>
+        <h1 class="title">{{ page.title | default: site.title }}</h1>
+        {% if page.layout == "post" or page.layout == "math" %}
+        <nav>
+            <a href="/">Home</a>
+        </nav>
+        {% endif %}
+        <main>
+            {{ content }}
+        </main>
+    </body>
+
+    <footer>
+        <p>
+            Copyright &copy; 2026 Rui Wang
+        </p>
+        <p>
+            Training AI with any content on this site is strictly prohibited. Opinions expressed belong to and reflect solely of the author.
+        </p>
+    </footer>
+
+</html>

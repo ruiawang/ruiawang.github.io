@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+SC:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --black: #0a0a0a;
+    --grey: #444444;
+    --white: #ededed;
+    --link: #d98ba1;
+    --border-width: 0.1rem;
+}
+
+:lang(en) {
+    font-family: 'Noto Sans';
+}
+:lang(zh-Hans) {
+    font-family: 'Noto Sans SC';
+}
+:lang(zh-Hant) {
+    font-family: 'Noto Sans TC';
+}
+:lang(ja) {
+    font-family: 'Noto Sans JP';
+}
+
+a,a:visited {
+    color: var(--link)
+}
+
+ol {
+    list-style: decimal;
+}
+ol ol {
+    list-style: lower-alpha;
+}
+ul {
+    list-style: disc;
+}
+ol ul {
+    list-style: circle;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 1.5rem auto;
+    max-width: 50rem;
+    padding: 0 1vw;
+    word-wrap: break-word; 
+}
+
+footer {
+    font-size: 0.8rem;
+}
