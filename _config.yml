@@ -4,7 +4,7 @@ title: ruiawang
 description: Rui Wang's Homepage
 author: Rui Wang
 
-permalink: /:year/:month/:day/:slug/index.html
+permalink: /:slug/index.html
 
 sass:
   style: compressed
@@ -15,6 +15,41 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+
+collections:
+  posts:
+    output: true
+  tags:
+    output: true
+    permalink: /tags/:slug/index.html
+  whims:
+    output: true
+    permalink: /whims/:slug/index.html
+  whim_tags:
+    output: true
+    permalink: /whims/tags/:slug/index.html
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "tags"
+    values:
+      layout: "tag"
+  - scope:
+      path: ""
+      type: "whims"
+    values:
+      layout: "whim"
+  - scope:
+      path: ""
+      type: "whim_tags"
+    values:
+      layout: "whim-tag"
 
 markdown: kramdown
 kramdown:
