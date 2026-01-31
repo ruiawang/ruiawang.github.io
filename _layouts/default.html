@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="/static/css/main.css">
     </head>
     <body>
-        <h1>{{ page.title | default: site.title }}</h1>
         {% case page.layout %}
             {% when "post","math" %}
                 <nav>
@@ -30,7 +29,19 @@
                 <nav>
                     <a href="/whims">Whims</a>
                 </nav>
+            {% else %}
+                {% case page.title %}
+                    {% when "tags","whims" %}
+                        <nav>
+                            <a href="/">Home</a>
+                        </nav>
+                    {% when "whim tags" %}
+                        <nav>
+                            <a href="/whims">Whims</a>
+                        </nav>
+                {% endcase %}
         {% endcase %}
+        <h1>{{ page.title | default: site.title }}</h1>
         <main>
             {{ content }}
         </main>

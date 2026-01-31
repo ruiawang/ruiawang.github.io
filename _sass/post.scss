@@ -1,0 +1,18 @@
+@import "code";
+
+.post-data {
+    font-size: 1rem;
+}
+
+.tags {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5rem;
+}
+
+.footnotes {
+  border-top: var(--border-width) solid var(--white);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}

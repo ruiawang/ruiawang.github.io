@@ -2,10 +2,12 @@
 layout: default
 ---
 {{ page.description }}
+
+{{ content }}
 <ul>
 {% for post in site.whims %}
 {% if post.tags contains page.slug %}
-<li><a href="{{ post.url }}/">{{ post.slug }}</a></li>
+<li><a href="{{ post.url }}/">{{ post.title }}</a> <span class="post-date">({{ post.date | date_to_string: "ordinal", "US" }})</span></li>
 {% endif %}
 {% endfor %}
 </ul>

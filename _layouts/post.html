@@ -2,5 +2,14 @@
 layout: default
 ---
 <article>
+    <div class="post-data">
+        <p>{{ page.date | date_to_string: "ordinal", "US" }}</p> 
+        <p>
+            Tags:
+            {% for tag in page.tags %}
+            <a href="/tags/{{ tag }}">{{ tag }}</a>
+            {% endfor %}
+        </p>
+    </div>
     {{ content }}
 </article>
