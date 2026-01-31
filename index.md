@@ -1,6 +1,5 @@
 ---
 layout: default
-title: ruiawang
 ---
 ## welcome to my site!
 I'm a software engineer at [Google](https://about.google/company-info/), working on infrastructure for high-performance computing and AI/ML clusters.
